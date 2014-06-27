@@ -24,8 +24,13 @@
     <nav>
       <div class="wrap">
         <ul class="nav-list">
-          <li class="nav-item"><a class="nav-link active" href="#">Current Status</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Status History</a></li>
+          <li class="nav-item">
+            <a class="nav-link <%= nav_active('/') %>" href="index.html">Current Status</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link <%= nav_active('/history.html') %>" href="history.html">Status History</a>
+          </li>
         </ul>
       </div>
     </nav>
