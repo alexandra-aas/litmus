@@ -58,7 +58,7 @@
 
 .status-alert {
   line-height: 1.4em;
-  margin: 20px 0 0 25px;
+  margin: 10px 0 0 25px;
   position: relative;
 
   .fa {
@@ -72,6 +72,7 @@
 .status-alert-list {
   border-top: 2px solid #DDD;
   margin-top: 20px;
+  padding-top: 10px;
 }
 
 .status-block {
