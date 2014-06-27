@@ -47,12 +47,12 @@
 }
 
 .opacity-0 {
-  @include transition (opacity 200ms ease-in-out);
+  @include transition (opacity 500ms ease-in-out);
   @include opacity(0);
 }
 
 .opacity-1 {
-  @include transition (opacity 200ms ease-in-out);
+  @include transition (opacity 500ms ease-in-out);
   @include opacity(1);
 }
 
