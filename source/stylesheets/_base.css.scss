@@ -1,0 +1,45 @@
+html {
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background: $brown;
+  color: #555;
+  font-family: Proxima Nova, $helvetica;
+}
+
+h1 {
+  background: image-url('logo.png');
+  display: inline-block;
+  @include size(51px 51px);
+}
+
+h2 {
+  color: $dark_brown;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+header {
+  background: $red;
+  padding: 50px 0;
+
+  & > * {
+    color: #FFF !important;
+  }
+}
+
+nav {
+  background: $dark_brown;
+  margin-bottom: 40px;
+}
+
+p {
+  margin-top: 20px;
+}
+
+strong {
+  font-weight: 600;
+}

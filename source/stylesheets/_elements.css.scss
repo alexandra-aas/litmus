@@ -1,0 +1,14 @@
+$brown: #545453;
+$dark_brown: darken($brown, 10%);
+$gray: #EBEAE8;
+$green: #55BC75;
+$yellow: #F7BE3F;
+$red: #DE4444;
+
+@mixin opacity($trans) {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$trans * 100})";
+  filter: alpha(opacity=($trans * 100));
+  -moz-opacity: $trans;
+  -khtml-opacity: $trans;
+  opacity: $trans;
+}
