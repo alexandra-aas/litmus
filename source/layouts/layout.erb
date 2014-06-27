@@ -9,11 +9,15 @@
   </head>
   
   <body>
+    <a href="#" class="support">
+      <i class="fa fa-envelope-o"></i>
+    </a>
+
     <header>
       <div class="wrap center">
         <h1 class="logo"></h1>
-        <h2>Sorry, we're having issues.</h2>
-        <h3>Updated 2 min ago.</h3>
+        <h2 class="text-on-dark">Sorry, we're having issues.</h2>
+        <h3 class="text-on-dark">Updated 2 min ago.</h3>
       </div>
     </header>
 
@@ -31,5 +35,23 @@
         <%= yield %>
       </div>
     </main>
+
+    <footer>
+      <div class="wrap">
+        <p >
+          We monitor our systems by performing live email and web page tests constantly.
+          Additionally, we measure the response time of the Litmus application and our 
+          Email Analytics platform from different locations. This status page is updated
+          every five minutes.
+        </p>
+
+        <p>
+          Need help? Contact <a href="#">support@litmus.com</a>.
+        </p>
+      </div>
+    </footer>
+
+    <%= javascript_include_tag  "https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" %>
+    <%= javascript_include_tag  "init" %>
   </body>
 </html>

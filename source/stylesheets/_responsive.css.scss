@@ -1,0 +1,29 @@
+@media only screen and (max-width: 600px) {
+  .nav-list {
+    text-align: center;
+  }
+
+  .wrap {
+    width: 90%
+  }
+
+  .status-circle {
+    display: block;
+    left: auto;
+    margin: 40px auto 20px auto;
+    position: relative;
+    top: auto;
+  }
+
+  .status-content {
+    margin-left: 0;
+  }
+
+  .status-block-green .status-content { border-left: 0; border-top: 5px solid $green; }
+  .status-block-red .status-content { border-left: 0; border-top: 5px solid $red; }
+  .status-block-yellow .status-content { border-left: 0; border-top: 5px solid $yellow; }
+
+  .support {
+    display: none;
+  }
+}

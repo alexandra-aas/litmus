@@ -12,3 +12,23 @@ $red: #DE4444;
   -khtml-opacity: $trans;
   opacity: $trans;
 }
+
+@mixin status-block($color) {
+  a {
+    @include transition (color 200ms ease-in-out);
+    color: $color;
+    font-weight: 600;
+
+    &:hover {
+      color: lighten($color, 10%);
+    }
+  }
+  
+  .status-circle {
+    color: $color;
+  }
+  
+  .status-content {
+    border-left: 5px solid $color;
+  }
+}

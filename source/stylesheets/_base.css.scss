@@ -10,9 +10,23 @@ body {
   font-family: Proxima Nova, $helvetica;
 }
 
+a,
+a:visited {
+  color: inherit;
+}
+
+footer {
+  background: $dark_brown;
+  color: #999;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 30px 0 50px 0;
+}
+
 h1 {
   background: image-url('logo.png');
   display: inline-block;
+  margin-bottom: 20px;
   @include size(51px 51px);
 }
 
@@ -22,21 +36,27 @@ h2 {
   font-weight: 600;
 }
 
+h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
 header {
   background: $red;
   padding: 50px 0;
+}
 
-  & > * {
-    color: #FFF !important;
-  }
+main {
+  margin: 60px 0;
 }
 
 nav {
   background: $dark_brown;
-  margin-bottom: 40px;
 }
 
 p {
+  line-height: 1.4em;
   margin-top: 20px;
 }
 
