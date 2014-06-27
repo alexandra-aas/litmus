@@ -1,15 +1,28 @@
-.center {
+.button,
+.button:visited {
+  @include transition (background 200ms ease-in-out);
+  background: $blue;
+  border-radius: 3px;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 40px;
+  padding: 10px 30px;
+  position: relative;
+  text-decoration: none;
+  z-index: 1000;
+
+  &:hover {
+    background: $dark_blue;
+    box-shadow: 0 1px 1px 0 $dark_brown;
+    color: #FFF;
+  }
+}
+
+.button-wrap {
+  margin-left: 60px;
   text-align: center;
-}
-
-.opacity-0 {
-  @include transition (opacity 200ms ease-in-out);
-  @include opacity(0);
-}
-
-.opacity-1 {
-  @include transition (opacity 200ms ease-in-out);
-  @include opacity(1);
 }
 
 .nav-item {
@@ -31,6 +44,16 @@
   &:hover {
     color: #FFF;
   }
+}
+
+.opacity-0 {
+  @include transition (opacity 200ms ease-in-out);
+  @include opacity(0);
+}
+
+.opacity-1 {
+  @include transition (opacity 200ms ease-in-out);
+  @include opacity(1);
 }
 
 .status-alert {
@@ -92,8 +115,10 @@
 .support:visited {
   @include opacity(1);
   @include transition (opacity 200ms ease-in-out);
-  color: #FFF;
+  background: #FFF;
+  border-radius: 3px;
   font-size: 30px;
+  padding: 10px;
   position: fixed;
   right: 30px;
   top: 30px;
@@ -108,8 +133,28 @@
   color: #FFF;
 }
 
+.time-arrow {
+  width: 0;
+  height: 0;
+  border-bottom: 26px solid transparent;
+  border-left: 15px solid #CCC;
+  border-top: 26px solid transparent;
+  position: absolute;
+  right: -15px;
+  top: 0;
+}
+
+.timeline {
+  background: $dark_brown;
+  width: 4px;
+  position: absolute;
+  top: -60px;
+  left: 18px;
+}
+
 .wrap {
   margin-left: auto;
   margin-right: auto;
+  position: relative;
   width: 600px;
 }

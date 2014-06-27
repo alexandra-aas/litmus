@@ -10,9 +10,13 @@ body {
   font-family: Proxima Nova, $helvetica;
 }
 
-a,
-a:visited {
-  color: inherit;
+a, a:visited {
+  @include transition (color 200ms ease-in-out);
+  color: $blue;
+
+  &:hover {
+    color: $dark_blue;
+  }
 }
 
 footer {
@@ -32,11 +36,17 @@ h1 {
 
 h2 {
   color: $dark_brown;
-  font-size: 20px;
+  font-size: 26px;
   font-weight: 600;
 }
 
 h3 {
+  color: $dark_brown;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h4 {
   font-size: 14px;
   font-weight: 600;
   margin-top: 10px;
@@ -45,6 +55,7 @@ h3 {
 header {
   background: $red;
   padding: 50px 0;
+  text-align: center;
 }
 
 main {
@@ -62,4 +73,21 @@ p {
 
 strong {
   font-weight: 600;
+}
+
+time {
+  background: #CCC;
+  border-radius: 3px 0 0 3px;
+  color: #555;
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  left: -105px;
+  line-height: 1.4em;
+  margin-right: 15px;
+  padding: 10px 0 10px 10px;
+  position: absolute;
+  top: 4px;
+  width: 80px;
+  z-index: 1000;
 }

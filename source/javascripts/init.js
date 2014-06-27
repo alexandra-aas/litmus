@@ -1,10 +1,13 @@
-$('.js-status-block').each(function(i){
-  var statusBlock = $(this);
+$('.js-fade-in').each(function(i){
+  var fadeIn = $(this);
   
   setTimeout(function() {
-    statusBlock.addClass('opacity-1');
+    fadeIn.addClass('opacity-1');
   }, 500*i);
 });
 
+$('.js-timeline').height($('.js-main').outerHeight(true));
 
-
+$(window).resize(function () {
+  $('.js-timeline').height($('.js-main').outerHeight(true));
+});
