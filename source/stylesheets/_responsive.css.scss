@@ -18,6 +18,10 @@
     margin-left: 0;
   }
 
+  .nav-item {
+    margin: 40px 20px;
+  }
+
   .time-arrow {
     display: none;
   }
@@ -26,20 +30,18 @@
     text-align: center;
   }
 
-  .wrap {
-    width: 90%
-  }
-
   .status-circle {
+    border-radius: 40px 40px 0 0;
     display: block;
     left: auto;
-    margin: 40px auto 20px auto;
+    margin: 40px auto 0 auto;
     position: relative;
     top: auto;
   }
 
   .status-content {
     margin-left: 0;
+    padding: 30px;
   }
 
   .status-block-green .status-content { border-left: 0; border-top: 5px solid $green; }
@@ -53,5 +55,9 @@
   .timeline {
     left: 50%;
     margin-left: -2px;
+  }
+
+  .wrap {
+    width: 86%
   }
 }
