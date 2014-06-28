@@ -9,15 +9,15 @@
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag "index" %>
   </head>
-  
+
   <body>
-    <a href="#" class="support">
-      <i class="fa fa-envelope-o"></i>
+    <a href="mailto:support@litmus.com" class="support">
+      <i class="fa fa-envelope-o"></i> support@litmus.com
     </a>
 
     <header>
       <div class="wrap">
-        <h1 class="logo"></h1>
+        <a href="https://litmus.com"><h1 class="logo"></h1></a>
         <h2 class="text-on-dark">Sorry, we're having issues.</h2>
         <h4 class="text-on-dark">Updated 2 min ago.</h4>
       </div>
@@ -47,18 +47,18 @@
       <div class="wrap">
         <p >
           We monitor our systems by performing live email and web page tests constantly.
-          Additionally, we measure the response time of the Litmus application and our 
+          Additionally, we measure the response time of the Litmus application and our
           Email Analytics platform from different locations. This status page is updated
           every five minutes.
         </p>
 
         <p>
-          Need help? Contact <a href="#">support@litmus.com</a>.
+          Need help? Contact <a href="mailto:support@litmus.com">support@litmus.com</a>.
         </p>
       </div>
     </footer>
 
-    <%= javascript_include_tag  "https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" %>
-    <%= javascript_include_tag  "init" %>
+    <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" %>
+    <%= javascript_include_tag "init" %>
   </body>
 </html>

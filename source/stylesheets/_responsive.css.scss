@@ -1,4 +1,8 @@
 @media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
   time {
     border-radius: 3px;
     left: auto;
@@ -19,11 +23,11 @@
   }
 
   .nav-item {
-    margin: 40px 20px;
+    margin: 40px 10px 40px 0;
   }
 
-  .time-arrow {
-    display: none;
+  .nav-item:last-child {
+    margin: 40px 0 40px 10px;
   }
 
   .nav-list {
@@ -32,7 +36,6 @@
 
   .status-circle {
     border-radius: 40px 40px 0 0;
-    display: block;
     left: auto;
     margin: 40px auto 0 auto;
     position: relative;
@@ -40,15 +43,17 @@
   }
 
   .status-content {
+    border-left-width: 0 !important;
+    border-top-width: 5px;
     margin-left: 0;
-    padding: 30px;
+    padding: 20px;
   }
 
-  .status-block-green .status-content { border-left: 0; border-top: 5px solid $green; }
-  .status-block-red .status-content { border-left: 0; border-top: 5px solid $red; }
-  .status-block-yellow .status-content { border-left: 0; border-top: 5px solid $yellow; }
-
   .support {
+    display: none;
+  }
+
+  .time-arrow {
     display: none;
   }
 

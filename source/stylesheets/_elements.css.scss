@@ -1,8 +1,7 @@
 $blue: #71A3AD;
-$brown: #545453;
 $dark_blue: darken($blue, 10%);
-$dark_brown: darken($brown, 10%);
-$gray: #EBEAE8;
+$gray: #545453;
+$dark_gray: darken($gray, 10%);
 $green: #55BC75;
 $yellow: #F7BE3F;
 $red: #DE4444;
@@ -25,12 +24,14 @@ $red: #DE4444;
       color: lighten($color, 10%);
     }
   }
-  
+
   .status-circle {
     color: $color;
   }
-  
+
   .status-content {
-    border-left: 5px solid $color;
+    border-color: $color;
+    border-left-width: 5px;
+    border-style: solid;
   }
 }

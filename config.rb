@@ -1,6 +1,6 @@
 helpers do
   def nav_active(url)
-    current_page.url == url ? 'active"' : ''
+    current_page.url == url ? 'active' : ''
   end
 end
 

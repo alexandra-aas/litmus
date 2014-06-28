@@ -1,11 +1,14 @@
+var fadeIn = $('.js-fade-in');
+var mainContent = $('.js-main');
 var onMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+var timeline = $('.js-timeline');
 
 $(window).load(function() {
   if (onMobileDevice) {
-    $('.js-fade-in').addClass('opacity-1');
+    fadeIn.addClass('opacity-1');
 
   } else {
-    $('.js-fade-in').each(function(i){
+    fadeIn.each(function(i){
       var fadeIn = $(this);
 
       setTimeout(function() {
@@ -14,9 +17,9 @@ $(window).load(function() {
     });
   };
 
-  $('.js-timeline').height($('.js-main').outerHeight(true));
+  timeline.height(mainContent.outerHeight(true));
+});
 
-  $(window).resize(function () {
-    $('.js-timeline').height($('.js-main').outerHeight(true));
-  });
+$(window).resize(function () {
+  timeline.height(mainContent.outerHeight(true));
 });
