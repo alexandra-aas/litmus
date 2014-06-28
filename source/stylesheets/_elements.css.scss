@@ -19,7 +19,7 @@ $red: #DE4444;
   a {
     @include transition (color 200ms ease-in-out);
     color: $color;
-    font-weight: 600;
+    font-weight: 700;
 
     &:hover {
       color: lighten($color, 10%);
