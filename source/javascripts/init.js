@@ -2,7 +2,7 @@ var onMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera M
 
 $(window).load(function() {
   if (onMobileDevice) {
-    $('.js-fade-in').show();
+    $('.js-fade-in').addClass('opacity-1');
 
   } else {
     $('.js-fade-in').each(function(i){
